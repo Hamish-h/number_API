@@ -13,6 +13,7 @@ NumberFormView.prototype.bindEvents = function () {
 NumberFormView.prototype.handleSubmit = function (evt) {
   evt.preventDefault();
   PubSub.publish('NumberFormView:submit', evt.target.number.value);
+
 };
 
 module.exports = NumberFormView;
